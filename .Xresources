@@ -19,21 +19,23 @@
 #define white0                    #F9F9F9
 #define white1                    #F7F7F7
 #define white2                    #F4F4F4
+#define bg			  #161616
 
 *.color1:                         red0
 *.color2:                         green0
 *.color3:                         yellow0
-*.color4:                         blue0
-*.color5:                         magenta0
+*.color4:                         magenta0
+*.color5:                         blue0
 *.color6:                         cyan0
 
 *.color9:                         red1
 *.color10:                        green1
 *.color11:                        yellow1
-*.color12:                        blue1
-*.color13:                        magenta1
+*.color12:                        magenta1
+*.color13:                        blue1
 *.color14:                        cyan1 
 
-! DWM 
-dwm.selbgcolor:			  #643D97
-dwm.selbordercolor:		  #643D97
+! ST
+*font:				  JetBrainsMono Nerd Font:pixelsize=12:antialias=true:autohint=true
+*background:			  bg
+*borderpx:			  10

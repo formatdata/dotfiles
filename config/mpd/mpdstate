@@ -1,0 +1,58 @@
+sw_volume: 100
+audio_device_state:1:alsa for audio soundcard
+audio_device_state:1:my_fifo
+state: pause
+current: 1
+time: 136.910000
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Uru/Soreo Aito Yobunara.flac
+1:Uru/Serenade.flac
+2:Uru/Nandemo Naiyo.flac
+3:Uru/Love Song Self-cover version.flac
+4:Uru/Sobaniiruyo.flac
+5:Uru/Koi.flac
+6:Uru/Land Mark.flac
+7:Uru/Love Song.flac
+8:Uru/Positive Nyubu.flac
+9:Uru/Break.flac
+10:Uru/Mukishitsu.flac
+11:Uru/Datsu Karitekita Neko Syoukougun.flac
+12:Uru/Hakusekirei.flac
+13:Uru/First Love.flac
+14:Uru/Kokoroe Kamihitoe/01. Kokoroe.flac
+15:Uru/Kokoroe Kamihitoe/02. Kamihitoe.flac
+16:Uru/Kokoroe Kamihitoe/03. Soreo Aito Yobunara - From THE FIRST TAKE.flac
+17:Uru/Kokoroe Kamihitoe/04. Furiko - From THE FIRST TAKE.flac
+18:Uru/Uru - あなたがいることで (TBS系日曜劇場「テセウスの船」主題歌).flac
+19:Uru/Uru - Hoshino Nakano Kimi.flac
+20:Uru/Uru - The Last Rain.flac
+21:Uru/Uru - Freesia.flac
+22:Uru/Uru - Shiawase No Uta.flac
+23:Uru/Uru - Kiseki.flac
+24:Uru/Prologue/Uru - Yuki No Hana.flac
+25:Uru/Uru - remember.flac
+26:Uru/Uru - Freesia (Self-Cover Version).flac
+27:Uru/Uru - One More Time, One More Chance.flac
+28:Uru/Uru - Scenery.flac
+29:Uru/Uru - remember (Self-Cover Version).flac
+30:Uru/Uru - Negai.flac
+31:Uru/Uru - Anataga Iru Kotode.flac
+32:Uru/Uru - IMA AINI IKU.flac
+33:Uru/Uru - Anatagairukotode (self cover version).flac
+34:Uru/Uru - Break.flac
+35:Uru/Uru - Furiko.flac
+36:Uru/Love Song/Uru - Love Song.mp3
+37:Uru/Love Song/Uru - First Love (Self-cover version).mp3
+38:Uru/Uru - First Love.flac
+39:Uru/Uru - Mukishitsu.flac
+40:Uru/Uru - Dry Flower.flac
+41:Uru/Uru - Break (Self-cover version).flac
+42:Uru/01. 再会 (produced by Ayase).flac
+playlist_end

@@ -1,0 +1,77 @@
+# configuration
+set info size
+set dircounts
+set period 1
+set cursorpreviewfmt "\033[7m"
+# set previewer ~/.config/lf/scope-lf-wrapper.sh
+set previewer ~/.config/lf/previewer
+set cleaner ~/.config/lf/cleaner
+set drawbox
+set icons
+set hidden true
+
+# cmd
+cmd edit-config ${{
+    $EDITOR ~/.config/lf/lfrc
+    lf -remote "send $id source ~/.config/lf/lfrc"
+}}
+
+cmd open ${{
+    case $(file --mime-type -Lb "$f") in
+        text/*) nvim "$fx";;
+        image/*) nsxiv "$fx";;
+        # image/*) pqiv -i -t -f --box-colors=#BAC2DE:#cba6f7 "$fx";;
+        video/*) mpv "$fx";;
+        *) for f in "$fx"; do xdg-open "$f" > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+cmd open-with-gui &$@ "$fx" ## opens with a gui application outside lf client
+cmd open-with-cli $$@ "$fx" ## opens with a cli application inside lf client
+
+# archive
+cmd unarchive ${{
+  case "$f" in
+      *.zip) unzip "$f" ;;
+      *.tar.gz) tar -xzvf "$f" ;;
+      *.tar.xz) tar -xf "$f" ;;
+      *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar) tar -xvf "$f" ;;
+      *.rar) unrar x "$f" ;;
+      *) echo "Unsupported format" ;;
+  esac
+}}
+
+cmd setbg ${{
+  setbg "$fx" &
+}}
+
+# unmmapings
+map d
+map y
+map p
+map v
+map c
+map w
+
+# file edits
+map cc clear
+map dd cut
+map dD delete
+map yy copy
+map pp paste
+map vv invert
+map vV invert-below
+map vs toggle
+map ex unarchive
+
+# mappings
+map <enter> open
+map <c-w> $LESSOPEN='| ~/.config/lf/scope-lf-wrapper.sh %s' less -R $f
+map a push %mkdir<space>
+map Mf %lf-mkfile
+map <c-c> edit-config
+map O push :open-with-gui<space> ## input application
+map o push :open-with-cli<space> ## input application
+map e
+map cd $%SHELL%
